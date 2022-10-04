@@ -1,12 +1,12 @@
 <?php
 
-namespace Arifpay\Arifpay\Lib\Core\DirectPay;
+namespace Arifpay\Phpsdk\Lib\Core\DirectPay;
 
-use Arifpay\Arifpay\ArifPay;
-use Arifpay\Arifpay\Helper\ArifpaySupport;
-use Arifpay\Arifpay\Lib\ArifpayAPIResponse;
-use Arifpay\Arifpay\Lib\ArifpayTransferResponse;
-use Arifpay\Arifpay\Lib\Exception\ArifpayNetworkException;
+use Arifpay\Phpsdk\ArifPay;
+use Arifpay\Phpsdk\Helper\ArifpaySupport;
+use Arifpay\Phpsdk\Lib\ArifpayAPIResponse;
+use Arifpay\Phpsdk\Lib\ArifpayTransferResponse;
+use Arifpay\Phpsdk\Lib\Exception\ArifpayNetworkException;
 use GuzzleHttp\Exception\ClientException;
 use GuzzleHttp\RequestOptions;
 use League\Flysystem\ConnectionErrorException;

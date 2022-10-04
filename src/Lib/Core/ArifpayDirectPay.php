@@ -1,10 +1,10 @@
 <?php
 
-namespace Arifpay\Arifpay\Lib\Core;
+namespace Arifpay\Phpsdk\Lib\Core;
 
-use Arifpay\Arifpay\Lib\Core\DirectPay\ArifpayAwash;
-use Arifpay\Arifpay\Lib\Core\DirectPay\ArifpayAwashWallet;
-use Arifpay\Arifpay\Lib\Core\DirectPay\ArifpayTelebirr;
+use Arifpay\Phpsdk\Lib\Core\DirectPay\ArifpayAwash;
+use Arifpay\Phpsdk\Lib\Core\DirectPay\ArifpayAwashWallet;
+use Arifpay\Phpsdk\Lib\Core\DirectPay\ArifpayTelebirr;
 
 class ArifpayDirectPay
 {

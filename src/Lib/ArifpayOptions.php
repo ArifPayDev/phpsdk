@@ -1,6 +1,6 @@
 <?php
 
-namespace Arifpay\Arifpay\Lib;
+namespace Arifpay\Phpsdk\Lib;
 
 class ArifpayOptions
 {

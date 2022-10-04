@@ -1,6 +1,6 @@
 <?php
 
-namespace Arifpay\Arifpay\Lib\Exception;
+namespace Arifpay\Phpsdk\Lib\Exception;
 
 use Exception;
 use Throwable;

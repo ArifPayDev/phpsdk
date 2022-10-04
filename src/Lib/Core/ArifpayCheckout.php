@@ -1,15 +1,15 @@
 <?php
 
-namespace Arifpay\Arifpay\Lib\Core;
+namespace Arifpay\Phpsdk\Lib\Core;
 
-use Arifpay\Arifpay\ArifPay;
-use Arifpay\Arifpay\Helper\ArifpaySupport;
-use Arifpay\Arifpay\Lib\ArifpayAPIResponse;
-use Arifpay\Arifpay\Lib\ArifpayCheckoutRequest;
-use Arifpay\Arifpay\Lib\ArifpayCheckoutResponse;
-use Arifpay\Arifpay\Lib\ArifpayCheckoutSession;
-use Arifpay\Arifpay\Lib\ArifpayOptions;
-use Arifpay\Arifpay\Lib\Exception\ArifpayNetworkException;
+use Arifpay\Phpsdk\ArifPay;
+use Arifpay\Phpsdk\Helper\ArifpaySupport;
+use Arifpay\Phpsdk\Lib\ArifpayAPIResponse;
+use Arifpay\Phpsdk\Lib\ArifpayCheckoutRequest;
+use Arifpay\Phpsdk\Lib\ArifpayCheckoutResponse;
+use Arifpay\Phpsdk\Lib\ArifpayCheckoutSession;
+use Arifpay\Phpsdk\Lib\ArifpayOptions;
+use Arifpay\Phpsdk\Lib\Exception\ArifpayNetworkException;
 use GuzzleHttp\Exception\ClientException;
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\RequestOptions;

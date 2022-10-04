@@ -1,9 +1,9 @@
 <?php
 
-namespace Arifpay\Arifpay;
+namespace Arifpay\Phpsdk;
 
-use Arifpay\Arifpay\Lib\Core\ArifpayCheckout;
-use Arifpay\Arifpay\Lib\Core\ArifpayDirectPay;
+use Arifpay\Phpsdk\Lib\Core\ArifpayCheckout;
+use Arifpay\Phpsdk\Lib\Core\ArifpayDirectPay;
 use GuzzleHttp\Client;
 
 class ArifPay

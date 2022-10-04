@@ -30,7 +30,7 @@ value. After install the package. you can use as follow.
  > :warning: Since V2 ``Arifpay->create()`` is deprecated and ``Arifpay->checkout->create()`` should be used.
 
 ```php
-use Arifpay\Arifpay\Arifpay;
+use Arifpay\Phpsdk\Arifpay;
 
 ...
 
@@ -46,12 +46,12 @@ After importing the `arifpay` package, use the checkout property of the Arifpay 
 
 ```php
 
-use Arifpay\Arifpay\Arifpay;
-use Arifpay\Arifpay\Helper\ArifpaySupport;
-use Arifpay\Arifpay\Lib\ArifpayBeneficary;
-use Arifpay\Arifpay\Lib\ArifpayCheckoutItem;
-use Arifpay\Arifpay\Lib\ArifpayCheckoutRequest;
-use Arifpay\Arifpay\Lib\ArifpayOptions;
+use Arifpay\Phpsdk\Arifpay;
+use Arifpay\Phpsdk\Helper\ArifpaySupport;
+use Arifpay\Phpsdk\Lib\ArifpayBeneficary;
+use Arifpay\Phpsdk\Lib\ArifpayCheckoutItem;
+use Arifpay\Phpsdk\Lib\ArifpayCheckoutRequest;
+use Arifpay\Phpsdk\Lib\ArifpayOptions;
 
 use Illuminate\Support\Carbon;
 
