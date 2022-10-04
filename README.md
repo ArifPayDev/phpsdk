@@ -45,20 +45,21 @@ After importing the `arifpay` package, use the checkout property of the Arifpay 
 
 
 ```php
+require_once 'vendor/autoload.php';
+
 
 use Arifpay\Phpsdk\Arifpay;
+
+
 use Arifpay\Phpsdk\Helper\ArifpaySupport;
 use Arifpay\Phpsdk\Lib\ArifpayBeneficary;
 use Arifpay\Phpsdk\Lib\ArifpayCheckoutItem;
 use Arifpay\Phpsdk\Lib\ArifpayCheckoutRequest;
 use Arifpay\Phpsdk\Lib\ArifpayOptions;
 
-use Illuminate\Support\Carbon;
-
 $arifpay = new Arifpay('your-api-key');
-$d = new  Carbon::now();
-$d->setMonth(10);
-$expired = ArifpaySupport::getExpireDateFromDate($d);
+
+$expired = "2023-01-13T17:09:42.411";
 $data = new ArifpayCheckoutRequest(
     cancel_url: 'https://api.arifpay.com',
     error_url: 'https://api.arifpay.com',
@@ -87,22 +88,6 @@ echo $session->session_id;
 
 ```
 
-::Note 
-    you Must use `use Illuminate\Support\Carbon` instead of `use Carbon\Carbon` to get the expire date
-    
-
-After putting your building  `ArifpayCheckoutRequest` just call the `create` method. Note passing `sandbox: true` option will create the session in test environment.
-
-This is session response object contains the following fields
-
-```js
-{
-  sessionId: string;
-  paymentUrl: string;
-  cancelUrl: string;
-  totalAmount: number;
-}
-```
 
 ## Getting Session by Session ID
 
@@ -166,24 +151,9 @@ learn more about [DirectPay here](https://developer.arifpay.net/docs/direcPay/ov
 
 # Change Log
 
-Released Date: `v1.0.0` June 09, 2022
+Released Date: `v1.1.1` Oct 03, 2022
 
 - Initial Release
-
-Released Date: `v1.2.0` June 30, 2022
-
-- Name space changed. use Arifpay/Arifpay
-- Exception Handling Improved
-
-Released Date: `v1.3.0` June 30, 2022
-
-- `expiredate` parameter in checkout session create formate changed to LocalDateTime format
-- Exception Handling For Non Exsisting Session
-
-Released Date: `v2.0.0` Aug 10, 2022
-
-- `DirectPay` added for Telebirr and Awash payment options
-
 
 ## More Information
 
